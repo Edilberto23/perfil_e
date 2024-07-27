@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil De Tarjeta</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato|Roboto:400,900' rel='stylesheet' type='text/css'>
+  <!-- CDN font awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../estilos/style.css">
+  <link rel="stylesheet" href="../estilos/estilos1.css">
+
+</head>
+<style>
+  .video-container {
+    position: relative;
+    padding-bottom: 40%;
+    /* Proporción 16:9 */
+    height: 0;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Cambiado de 50% a 100% */
+  }
+
+  .icono-video {
+    font-size: 15px;
+    /* Tamaño del ícono */
+    color: #e71009;
+    /* Color del ícono */
+  }
+
+  .icono-persona {
+    font-size: 24px;
+    /* Tamaño del ícono */
+    color: blue;
+    margin-right: 10px;
+    /* Espacio entre el ícono y el texto */
+  }
+
+  #animated-text {
+    color: #1a01f8;
+  }
+
+
+
+  .imagen1 {
+    border: 4px dotted black;
+  }
+
+  #animated-text {
+    color: blue;
+    -webkit-text-stroke: 1px blue;
+    text-shadow: 0px 4px 8px rgb(65, 63, 63);
+  }
+</style>
+
+<body>
+  <!--HE AGREGADO un header BARRA DE MENU-->
+
+  <header>
+    <nav>
+      <a href="#" class="enlace">
+        <img src="../img/logoedi.png" alt="" class="logo">
+      </a>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul class="bar">
+        <li><a class="active" href="#">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Portafolio</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="row">
+      <h2>
+        Trata bien a tu
+        <div class="change" id="rotate">
+          <span>gato</span>
+          <span>perro</span>
+          <span>padre</span>
+          <span>madre</span>
+          <span>vecino</span>
+          <span>mente</span>
+        </div>
+        <br>
+        , por favor!
+      </h2>
+    </div>
+    <a href="" class="btnServices">SERVICIOS</a>
+  </section>
+
+  <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nulla veniam totam, suscipit repudiandae
+    excepturi vel. Facere perspiciatis provident non sit nihil laudantium quasi repellendus veniam, iure, corrupti iusto
+    aliquid.</h3>
+
+
+
+  <div class="container">
+    <main class="card">
+      <header class="edi">
+        <img src="../img/edilberto1.jpg" alt="">
+      </header>
+      <section>
+        <h2 id="animated-text" class="h2perfil"><i class="fa fa-user"></i>MI PERFIL</h2>
+        <h2><i><i class="fa fa-map-marker"></i> S.M-PERÚ</i></h2>
+        <h3><i class="fas fa-user icono-persona"></i> Sobre Mi<i class="fa fa-arrow-right"></i> </h3>
+        <p>
+        <p>Yo disfruto mucho de la <a href="https://definicion.de/musica/" target="_blank"><i><b>música</b></i></a> en
+          todas sus
+          formas; siempre
+          encuentro en ella una fuente de inspiración y tranquilidad. También soy un apasionado del <a
+            href="https://soymaratonista.com/wp-content/uploads/2014/08/01-09-EVOLUCIONTRAIL.jpg"><i><b>running</b></i></a>;
+          salir a
+          correr no solo me mantiene en forma, sino que es mi momento para despejar la mente y recargar energías.</p>
+        </p>
+        <p>
+          <a href="https://i.pinimg.com/1200x/fe/af/fe/feaffe03f498af94b2b12eda5dfc5824.jpg">Viajar</a> y descubrir
+          nuevos lugares son parte fundamental de mi vida. Cada viaje es una oportunidad para
+          aprender algo nuevo, sumergirme en diferentes culturas y paisajes que enriquecen mi perspectiva del mundo. Me
+          encanta explorar la historia, la arquitectura y la gastronomía local en cada destino que visito, siempre en
+          busca de nuevas experiencias y conocimientos.
+        </p>
+
+        <!-- Ícono de video usando Font Awesome -->
+        <i class="fas fa-video icono-video"></i><a style="font-size: 16px; color: rgb(255, 0, 64);"><b> Laguna
+            Azul-Tarapoto</b></a>
+        <br />
+        <br />
+        <div class="video-container">
+          <video width="640" height="360" controls>
+            <source src="../video/video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <!--Agregado contenedor de videos-->
+        <div class="container1">
+          <h1>Video gallery</h1>
+          <div class="video_container">
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/Y2Vnjmb2gFs" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/2gtBkVOFUSo" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/2BvwGuKBVws" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+              <iframe src="../video/Santa Fe Klan - Algo Más.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/z5Fsg7DnuVI" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+              <iframe src="https://www.youtube.com/embed/YtWe5i3AThc" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;color: rgb(60, 90, 223);">GRUPOS</h2>
+          <div class="tooltip-container">
+            <a href="https://www.youtube.com/watch?v=rF0I7-gmCSk" class="animated-border">
+              <img src="../img/santafe.jpg" class="imagen1" style="width:220px; height:220px;">
+              <span class="tooltip-text">Haz click aquí</span>
+            </a>
+          </div>
+          <!--AQUI AGREGREGUE UN MAPA-->
+          <div id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63480.25036940991!2d-77.2078385!3d-6.0609686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b727bf4cf0ec33%3A0x637b94ce3004ed3d!2sRioja!5e0!3m2!1ses!2spe!4v1722093213670!5m2!1ses!2spe"
+              width="100%" height="500" style="border: 2px solid rgb(0, 255, 149); border-radius: 10px;"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <h3 style="color: #e71009;">¡Estamos en constante mejora nuestra página web :) ! </h3>
+
+          <!--agregado iconos para redes sociales-->
+          <hr>
+          <br>
+          <div class="social-container">
+            <h3>Redes Sociales</h3>
+            <br>
+            <ul class="hola">
+              <li><a href="https://www.facebook.com/ar.rs.56" class="fa fa-facebook"></a></li>
+              <!-- para que lea el numero del whatsapp correctamente-->
+              <li><a
+                  href="https://api.whatsapp.com/send?phone=947627948&text=Hola%20te%20estas%20contactando%20con%20Edilberto,%20en%20que%20puedo%20ayudarte?"
+                  class="fa fa-whatsapp"></a></li>
+              <li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
+              <li><a href="https://www.youtube.com/watch?v=3H8TzBLYYQE" class="fa fa-youtube"></a></li>
+              <li><a href="https://www.tiktok.com/" class="fa fa-tiktok"></a></li>
+            </ul>
+          </div>
+      </section>
+      <!--pie de pagina-->
+      <footer>
+        <center>
+          <p>&copy; Edilberto Rodriguez/2024 Todos los derechos reservados.</p>
+        </center>
+      </footer>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var textWrapper = document.getElementById('animated-text');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+      anime.timeline({ loop: false })
+        .add({
+          targets: '.letter',
+          scale: [4, 1],
+          opacity: [0, 1],
+          translateZ: 0,
+          easing: "easeOutExpo",
+          duration: 950,
+          delay: (el, i) => 70 * i
+        });
+    });
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  background-color: rgb(228, 189, 213);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 2s ease-in-out;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4d4d4d;
+}
+.container strong ,h2{
+  color: black;
+  animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.left-column {
+  width: 40%;
+  text-align: justify;
+  animation: fadeIn 2s ease-in-out;
+  
+  
+}
+
+.right-column {
+  width: 45%;
+  text-align: justify;
+  animation: fadeIn 2s ease-in-out;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+p {
+  margin: 5px 0;
+      /*margin-bottom: 50px;*/
+      margin-bottom: 25px;
+      animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+  margin-top: 0;
+  animation: fadeIn 2s ease-in-out;
+}
+.left-column p {
+  margin-bottom: 15px; /* Espacio debajo de cada <strong> */
+}
+
+
+@media (max-width: 768px) {
+  .info {
+      flex-direction: column;
+  }
+  .left-column, .right-column {
+      width: 100%;
+  }
+  
+}
+
